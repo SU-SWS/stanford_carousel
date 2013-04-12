@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Stanford Carousel feature.
+ */
+
+include_once 'stanford_carousel.features.inc';
