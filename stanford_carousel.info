@@ -10,3 +10,5 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
 features[views_view][] = stanford_carousel
 project status url = http://drupalfeatures.stanford.edu/fserver/stanford_carousel/7.x
+scripts[] = css/stanford_carousel.js
+stylesheets[all][] = js/stanford_carousel.css
