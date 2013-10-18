@@ -42,8 +42,8 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
   $handler->display->display_options['footer']['area']['content'] = '<div class="carousel-controls">
-<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+<a class="carousel-control left" href="#myCarousel" data-slide="prev" tabindex="0" role="button" aria-label="Previous">&lsaquo;</a>
+<a class="carousel-control right" href="#myCarousel" data-slide="next" tabindex="0" role="button" aria-label="Next">&rsaquo;</a>
 </div>
 <div class="carousel-dots">
 <ol class="carousel-indicators">
