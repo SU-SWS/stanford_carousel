@@ -30,7 +30,13 @@ jQuery(document).ready(function($) {
     $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + key + '"><a href="#">' + value + '</a></li>');
   }
   );
-  // this last bit is a little buggy; if you hard-code class="active" on the first <li> element in the ol.carousel.indicators, it works. But doing the following makes it stick
-  $('.carousel-indicators li:first').addClass("active");
+  // Bootstrap Carousel is looking for hard-coded class="active" on the first <li> element in the ol.carousel.indicators, so we have to re-implement that here.
+  $('.carousel-indicators li:first-child').addClass("active");
+  $('.carousel-indicators li').click(function()
+  {
+    $('.carousel-indicators li').removeClass("active");
+    $(this).toggleClass("active");
+  }
+  );
 });
 

@@ -33,6 +33,7 @@
 .view.carousel .carousel-indicators li {background-color: #FFFFFF; border: 1px solid #666666; border-radius: 7px; display: inline-block; float: none; height: 12px; width: 12px;}
 .view.carousel .carousel-indicators .active {background-color: #666666;}
 .view.carousel .carousel-indicators li:hover {cursor: pointer; background-color: #666666;}
+.view.carousel .carousel-indicators li a {margin-left: -99999px}
 
 /* Carousel controls */
 .view.carousel .carousel-controls {height: 0px;}
