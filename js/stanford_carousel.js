@@ -12,5 +12,25 @@ jQuery(document).ready(function($) {
 			interval: false // use false to disable auto cycling, or use a number 4000
 		});
 	}
+
+  // put the ol.carousel-indicators inside the div.carousel-dots
+  $('div.view-footer div.carousel-dots').append('<ol class="carousel-indicators"></ol>');
+  var dots = [];
+  // grab the contents of each h2 and pop it into the 'dots' array
+  $('.carousel-inner .views-row h2').each(function()
+  {
+    var header2 = $(this).text();
+    dots.push(header2);
+  }
+  );
+  // Build the <li> elements inside of ol.carousel-indicators. There should be one <li> element for each slide, that looks like this:
+  // <li data=target="myCarousel" data-slide-to"0"><a href="#">Slide Title</a></li>
+  $.each(dots, function(key, value)
+  {
+    $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + key + '"><a href="#">' + value + '</a></li>');
+  }
+  );
+  // this last bit is a little buggy; if you hard-code class="active" on the first <li> element in the ol.carousel.indicators, it works. But doing the following makes it stick
+  $('.carousel-indicators li:first').addClass("active");
 });
 

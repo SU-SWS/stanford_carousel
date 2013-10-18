@@ -46,12 +46,6 @@ function stanford_carousel_views_default_views() {
 <a class="carousel-control right" href="#myCarousel" data-slide="next" tabindex="0" role="button" aria-label="Next">&rsaquo;</a>
 </div>
 <div class="carousel-dots">
-<ol class="carousel-indicators">
-  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-  <li data-target="#myCarousel" data-slide-to="1"></li>
-  <li data-target="#myCarousel" data-slide-to="2"></li>
-  <li data-target="#myCarousel" data-slide-to="3"></li>
-</ol>
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['footer']['area']['tokenize'] = 0;
