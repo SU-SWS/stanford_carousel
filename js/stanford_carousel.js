@@ -1,17 +1,8 @@
 jQuery(document).ready(function($) {
-	// Bootstrap Carousel
+  // Bootstrap Carousel
 	$('.carousel').attr('id', 'myCarousel');
 	$('.carousel .view-content').addClass('carousel-inner');
 	$('.carousel .item:nth-child(1)').addClass('active');
-	if ($(".carousel-autoplay")[0]){
-		$('.carousel').carousel({
-			interval: 6000 // use false to disable auto cycling, or use a number 4000
-		});
-	} else {
-		$('.carousel').carousel({
-			interval: false // use false to disable auto cycling, or use a number 4000
-		});
-	}
 
   // put the ol.carousel-indicators inside the div.carousel-dots
   $('div.view-footer div.carousel-dots').append('<ol class="carousel-indicators"></ol>');
@@ -30,13 +21,18 @@ jQuery(document).ready(function($) {
     $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + key + '"><a href="#">' + value + '</a></li>');
   }
   );
-  // Bootstrap Carousel is looking for hard-coded class="active" on the first <li> element in the ol.carousel.indicators, so we have to re-implement that here.
-  $('.carousel-indicators li:first-child').addClass("active");
-  $('.carousel-indicators li').click(function()
-  {
-    $('.carousel-indicators li').removeClass("active");
-    $(this).toggleClass("active");
-  }
-  );
+  // Add the "active" class to the first <li> element
+  $('.carousel-indicators li').first().addClass("active");
+
+  // Run the carousel
+	if ($(".carousel-autoplay")[0]){
+		$('.carousel').carousel({
+			interval: 6000 // use false to disable auto cycling, or use a number 4000
+		});
+	} else {
+		$('.carousel').carousel({
+			interval: false // use false to disable auto cycling, or use a number 4000
+		});
+	}
 });
 
