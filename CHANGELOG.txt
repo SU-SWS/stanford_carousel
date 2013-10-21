@@ -1,9 +1,10 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
 ----------------------------------
 
-Stanford Carousel 7.x-1.0-alpha2 2013-10-21
+Stanford Carousel 7.x-1.0-alpha3 2013-10-21
 -------------------------------------------
 Changes since 1.0-alpha1:
+  (Note: there was no -alpha2 release)
   -Added ARIA roles and attributes to button controls
   -Added functionality to automatically determine the number of indicator "dots" based on number of slides
   -Improved accessibility of indicator "dot" controls
