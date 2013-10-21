@@ -29,7 +29,7 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'item';
@@ -411,6 +411,13 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'stanford_slide' => 'stanford_slide',
+  );
+  /* Filter criterion: Content: Featured (field_s_slide_featured) */
+  $handler->display->display_options['filters']['field_s_slide_featured_value']['id'] = 'field_s_slide_featured_value';
+  $handler->display->display_options['filters']['field_s_slide_featured_value']['table'] = 'field_data_field_s_slide_featured';
+  $handler->display->display_options['filters']['field_s_slide_featured_value']['field'] = 'field_s_slide_featured_value';
+  $handler->display->display_options['filters']['field_s_slide_featured_value']['value'] = array(
+    1 => '1',
   );
 
   /* Display: No Caption - Span 9 */
