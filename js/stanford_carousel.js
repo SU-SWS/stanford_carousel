@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
   {
     plusone = key + 1;
     $('.view-stanford-carousel .views-row-' + plusone + ' img').attr('id', 'stanford-carousel-slide' + plusone);
-    $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + key + '"><a href="#stanford-carousel-slide' + plusone +'">' + value + '</a></li>');
+    $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + key + '"><a role="button" aria-label="' + value +'" href="#stanford-carousel-slide' + plusone +'">' + value + '</a></li>');
   }
   );
   // Add the "active" class to the first <li> element
