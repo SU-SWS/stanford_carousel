@@ -18,7 +18,9 @@ jQuery(document).ready(function($) {
   // <li data=target="myCarousel" data-slide-to"0"><a href="#">Slide Title</a></li>
   $.each(dots, function(key, value)
   {
-    $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + key + '"><a href="#">' + value + '</a></li>');
+    plusone = key + 1;
+    $('.view-stanford-carousel .views-row-' + plusone + ' img').attr('id', 'stanford-carousel-slide' + plusone);
+    $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + key + '"><a href="#stanford-carousel-slide' + plusone +'">' + value + '</a></li>');
   }
   );
   // Add the "active" class to the first <li> element
