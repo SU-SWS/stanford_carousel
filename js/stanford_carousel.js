@@ -2,9 +2,11 @@ jQuery(document).ready(function($) {
   // Bootstrap Carousel
 	$('.carousel').attr('id', 'myCarousel');
 	$('.carousel .view-content').addClass('carousel-inner');
+//  $('.carousel-inner').attr('aria-live', 'assertive');
 	$('.carousel .item:nth-child(1)').addClass('active');
-
-  // put the ol.carousel-indicators inside the div.carousel-dots
+	$('.carousel .item').attr('tabindex', '-1');
+	$('.carousel .item:nth-child(1)').attr('tabindex', '0');
+// put the ol.carousel-indicators inside the div.carousel-dots
   $('div.view-footer div.carousel-dots').append('<ol class="carousel-indicators"></ol>');
   var dots = [];
   // grab the contents of each h2 and pop it into the 'dots' array
@@ -15,7 +17,7 @@ jQuery(document).ready(function($) {
   }
   );
   // Build the <li> elements inside of ol.carousel-indicators. There should be one <li> element for each slide, that looks like this:
-  // <li data=target="myCarousel" data-slide-to"0"><a href="#">Slide Title</a></li>
+  // <li data=target="myCarousel" data-slide-to="0"><a href="#">Slide Title</a></li>
   $.each(dots, function(key, value)
   {
     plusone = key + 1;
@@ -29,12 +31,15 @@ jQuery(document).ready(function($) {
   // Run the carousel
 	if ($(".carousel-autoplay")[0]){
 		$('.carousel').carousel({
-			interval: 6000 // use false to disable auto cycling, or use a number 4000
+			interval: 6000, // use false to disable auto cycling, or use a number 4000
+      ariaFocus: true
 		});
 	} else {
 		$('.carousel').carousel({
-			interval: false // use false to disable auto cycling, or use a number 4000
+			interval: false, // use false to disable auto cycling, or use a number 4000
+      ariaFocus: true
 		});
 	}
+//  $('.carousel').carousel({interval: false, ariaFocus: true});
 });
 

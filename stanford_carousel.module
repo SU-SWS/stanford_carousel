@@ -5,3 +5,10 @@
  */
 
 include_once 'stanford_carousel.features.inc';
+
+/**
+ * Implements template_preprocess_html().
+ */
+function stanford_carousel_preprocess_html($variables) {
+  drupal_add_js(drupal_get_path('module', 'stanford_carousel') . '/js/stanford_carousel_aria.js', array('group' => JS_THEME, 'weight' => '100'));
+}
