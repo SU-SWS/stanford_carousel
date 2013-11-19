@@ -10,7 +10,6 @@
     this.$element = $(element)
     this.$indicators = this.$element.find('.carousel-indicators')
     this.options = options
-    console.log(options)
     this.options.pause == 'hover' && this.$element
       .on('mouseenter', $.proxy(this.pause, this))
       .on('mouseleave', $.proxy(this.cycle, this))
