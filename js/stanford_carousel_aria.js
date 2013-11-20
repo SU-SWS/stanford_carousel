@@ -110,6 +110,7 @@
         $active.addClass(direction)
         $next.addClass(direction)
         this.$element.one($.support.transition.end, function () {
+          $next.focus()
           $next.removeClass([type, direction].join(' ')).addClass('active')
           $active.removeClass(['active', direction].join(' '))
           that.sliding = false
@@ -120,14 +121,12 @@
         if (e.isDefaultPrevented()) return
         $active.removeClass('active')
         $next.addClass('active')
+        $next.focus()
         this.sliding = false
         this.$element.trigger('slid')
       }
 
       isCycling && this.cycle()
-      // jbickar thanks to @jbchristy
-      if (this.options.ariaFocus) $next.focus();
-
       return this
     }
 
@@ -160,31 +159,5 @@
 
   $.fn.carousel.Constructor = Carousel
 
-
- /* CAROUSEL NO CONFLICT
-  * ==================== */
-
-  $.fn.carousel.noConflict = function () {
-    $.fn.carousel = old
-    return this
-  }
-
- /* CAROUSEL DATA-API
-  * ================= */
-
-  $(document).on('click.carousel.data-api', '[data-slide], [data-slide-to]', function (e) {
-    var $this = $(this), href
-      , $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
-      , options = $.extend({}, $target.data(), $this.data())
-      , slideIndex
-
-    $target.carousel(options)
-
-    if (slideIndex = $this.attr('data-slide-to')) {
-      $target.data('carousel').pause().to(slideIndex).cycle()
-    }
-
-    e.preventDefault()
-  })
 
 }(window.jQuery);
