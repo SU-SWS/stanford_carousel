@@ -1,5 +1,14 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
-----------------------------------
+------------------------------------
+
+Stanford Carousel 7.x-1.0-alpha4 2013-11-20
+-------------------------------------------
+Changes since 1.0-alpha3:
+By jbickar:
+  -Added ARIA roles and labels to indicator dots
+  -Reordered HTML elements in View
+By sherakama:
+  -Updates to enable focus of screen readers to jump to the selected slide when its button is activated
 
 Stanford Carousel 7.x-1.0-alpha3 2013-10-21
 -------------------------------------------
