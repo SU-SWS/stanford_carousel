@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
   $('.carousel .item:nth-child(1)').addClass('active');
   $('.carousel .item').attr('tabindex', '-1');
   $('.carousel .item:nth-child(1)').attr('tabindex', '0');
-// put the ol.carousel-indicators inside the div.carousel-dots
+  // put the ol.carousel-indicators inside the div.carousel-dots
   $('div.view-footer div.carousel-dots').append('<ol class="carousel-indicators"></ol>');
   var dots = [];
   // grab the contents of each h2 and pop it into the 'dots' array
@@ -15,6 +15,19 @@ jQuery(document).ready(function($) {
     dots.push(header2);
   }
   );
+  // If we ended up with an empty array, that means there are no h2 elements.
+  // Therefore, it's a carousel without captions.
+  if(dots.length == 0) {
+    var i = 1;
+    $('.carousel-inner .views-row').each(function()
+    {
+      // Call it "Slide 1", "Slide 2" ,etc.
+      var header = "Slide " + i;
+      dots.push(header);
+      i++;
+    }
+    );
+  }
   // Build the <li> elements inside of ol.carousel-indicators. There should be one <li> element for each slide, that looks like this:
   // <li data=target="myCarousel" data-slide-to="0"><a href="#">Slide Title</a></li>
   $.each(dots, function(key, value)
