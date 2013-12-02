@@ -2,7 +2,6 @@ jQuery(document).ready(function($) {
   // Bootstrap Carousel
   $('.carousel').attr('id', 'myCarousel');
   $('.carousel .view-content').addClass('carousel-inner');
-//  $('.carousel-inner').attr('aria-live', 'assertive');
   $('.carousel .item:nth-child(1)').addClass('active');
   $('.carousel .item').attr('tabindex', '-1');
   $('.carousel .item:nth-child(1)').attr('tabindex', '0');
@@ -40,6 +39,5 @@ jQuery(document).ready(function($) {
       ariaFocus: true
     });
   }
-//  $('.carousel').carousel({interval: false, ariaFocus: true});
 });
 
