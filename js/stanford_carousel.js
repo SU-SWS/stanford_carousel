@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
   // Bootstrap Carousel
-	$('.carousel').attr('id', 'myCarousel');
-	$('.carousel .view-content').addClass('carousel-inner');
+  $('.carousel').attr('id', 'myCarousel');
+  $('.carousel .view-content').addClass('carousel-inner');
 //  $('.carousel-inner').attr('aria-live', 'assertive');
-	$('.carousel .item:nth-child(1)').addClass('active');
-	$('.carousel .item').attr('tabindex', '-1');
-	$('.carousel .item:nth-child(1)').attr('tabindex', '0');
+  $('.carousel .item:nth-child(1)').addClass('active');
+  $('.carousel .item').attr('tabindex', '-1');
+  $('.carousel .item:nth-child(1)').attr('tabindex', '0');
 // put the ol.carousel-indicators inside the div.carousel-dots
   $('div.view-footer div.carousel-dots').append('<ol class="carousel-indicators"></ol>');
   var dots = [];
@@ -29,17 +29,17 @@ jQuery(document).ready(function($) {
   $('.carousel-indicators li').first().addClass("active");
 
   // Run the carousel
-	if ($(".carousel-autoplay")[0]){
-		$('.carousel').carousel({
-			interval: 6000, // use false to disable auto cycling, or use a number 4000
+  if ($(".carousel-autoplay")[0]){
+    $('.carousel').carousel({
+      interval: 6000, // use false to disable auto cycling, or use a number 4000
       ariaFocus: true
-		});
-	} else {
-		$('.carousel').carousel({
-			interval: false, // use false to disable auto cycling, or use a number 4000
+    });
+  } else {
+    $('.carousel').carousel({
+      interval: false, // use false to disable auto cycling, or use a number 4000
       ariaFocus: true
-		});
-	}
+    });
+  }
 //  $('.carousel').carousel({interval: false, ariaFocus: true});
 });
 
