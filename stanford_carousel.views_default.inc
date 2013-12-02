@@ -41,11 +41,11 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
   $handler->display->display_options['footer']['area']['content'] = '<div class="carousel-controls">
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev" tabindex="0" role="button" aria-label="Previous">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next" tabindex="0" role="button" aria-label="Next">&rsaquo;</a>
-  </div>
-  <div class="carousel-dots">
-  </div>';
+    <button type="button" class="carousel-control left" href="#myCarousel" data-slide="prev" tabindex="0" role="button" aria-label="Previous">&lsaquo;</button>
+    <button type="button" class="carousel-control right" href="#myCarousel" data-slide="next" tabindex="0" role="button" aria-label="Next">&rsaquo;</button>
+    </div>
+    <div class="carousel-dots">
+    </div>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Relationship: Field: Image (field_s_image_info) */
   $handler->display->display_options['relationships']['field_s_image_info_value']['id'] = 'field_s_image_info_value';
@@ -90,6 +90,16 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['fields']['field_s_slide_link_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_s_slide_link_1']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_s_slide_link_1']['type'] = 'link_plain';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_s_slide_link_2']['id'] = 'field_s_slide_link_2';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['table'] = 'field_data_field_s_slide_link';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['field'] = 'field_s_slide_link';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['label'] = '';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_slide_link_2']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_slide_link_2']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['type'] = 'link_title_plain';
   /* Field: Content: Caption Color */
   $handler->display->display_options['fields']['field_s_slide_caption_color']['id'] = 'field_s_slide_caption_color';
   $handler->display->display_options['fields']['field_s_slide_caption_color']['table'] = 'field_data_field_s_slide_caption_color';
@@ -176,11 +186,12 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: Rewrite view';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="carousel-caption stanford-carousel-text [field_s_slide_caption_color] [field_s_slide_caption_position_h] [field_s_slide_caption_position_v]">
-  <h2 class="slide-title">[field_s_slide_link][title][field_s_slide_link_1]</h2>
-  <div class="slide-caption">[field_s_slide_link][field_s_image_caption][field_s_slide_link_1]</div>
-  <div class="edit-link">[edit_node]</div>
-  </div>
-  <div>[field_s_slide_link][field_s_image_image][field_s_slide_link_1]</div>';
+    <h2 class="slide-title">[field_s_slide_link][title][field_s_slide_link_1]</h2>
+    <div class="slide-caption">[field_s_slide_link][field_s_image_caption][field_s_slide_link_1]</div>
+    <div class="more-link">[field_s_slide_link][field_s_slide_link_2][field_s_slide_link_1]</div>
+    <div class="edit-link">[edit_node]</div>
+    </div>
+    <div>[field_s_slide_link][field_s_image_image][field_s_slide_link_1]</div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
@@ -513,6 +524,16 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['fields']['field_s_slide_link_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_s_slide_link_1']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_s_slide_link_1']['type'] = 'link_plain';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_s_slide_link_2']['id'] = 'field_s_slide_link_2';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['table'] = 'field_data_field_s_slide_link';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['field'] = 'field_s_slide_link';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['label'] = '';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_slide_link_2']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_slide_link_2']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['type'] = 'link_title_plain';
   /* Field: Content: Caption Color */
   $handler->display->display_options['fields']['field_s_slide_caption_color']['id'] = 'field_s_slide_caption_color';
   $handler->display->display_options['fields']['field_s_slide_caption_color']['table'] = 'field_data_field_s_slide_caption_color';
@@ -599,11 +620,12 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: Rewrite view';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="carousel-caption stanford-carousel-text [field_s_slide_caption_color] [field_s_slide_caption_position_h] [field_s_slide_caption_position_v]">
-  <h2 class="slide-title">[field_s_slide_link][title][field_s_slide_link_1]</h2>
-  <div class="slide-caption">[field_s_slide_link][field_s_image_caption][field_s_slide_link_1]</div>
-  <div class="edit-link">[edit_node]</div>
-  </div>
-  <div>[field_s_slide_link][field_s_image_image][field_s_slide_link_1]</div>';
+    <h2 class="slide-title">[field_s_slide_link][title][field_s_slide_link_1]</h2>
+    <div class="slide-caption">[field_s_slide_link][field_s_image_caption][field_s_slide_link_1]</div>
+    <div class="more-link">[field_s_slide_link][field_s_slide_link_2][field_s_slide_link_1]</div>
+    <div class="edit-link">[edit_node]</div>
+    </div>
+    <div>[field_s_slide_link][field_s_image_image][field_s_slide_link_1]</div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
@@ -665,6 +687,16 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['fields']['field_s_slide_link_1']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_s_slide_link_1']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_s_slide_link_1']['type'] = 'link_plain';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_s_slide_link_2']['id'] = 'field_s_slide_link_2';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['table'] = 'field_data_field_s_slide_link';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['field'] = 'field_s_slide_link';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['label'] = '';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_s_slide_link_2']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_slide_link_2']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_s_slide_link_2']['type'] = 'link_title_plain';
   /* Field: Content: Caption Color */
   $handler->display->display_options['fields']['field_s_slide_caption_color']['id'] = 'field_s_slide_caption_color';
   $handler->display->display_options['fields']['field_s_slide_caption_color']['table'] = 'field_data_field_s_slide_caption_color';
@@ -751,11 +783,12 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['fields']['nothing']['ui_name'] = 'Global: Rewrite view';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="carousel-caption stanford-carousel-text [field_s_slide_caption_color] [field_s_slide_caption_position_h] [field_s_slide_caption_position_v]">
-  <h2 class="slide-title">[field_s_slide_link][title][field_s_slide_link_1]</h2>
-  <div class="slide-caption">[field_s_slide_link][field_s_image_caption][field_s_slide_link_1]</div>
-  <div class="edit-link">[edit_node]</div>
-  </div>
-  <div>[field_s_slide_link][field_s_image_image][field_s_slide_link_1]</div>';
+    <h2 class="slide-title">[field_s_slide_link][title][field_s_slide_link_1]</h2>
+    <div class="slide-caption">[field_s_slide_link][field_s_image_caption][field_s_slide_link_1]</div>
+    <div class="more-link">[field_s_slide_link][field_s_slide_link_2][field_s_slide_link_1]</div>
+    <div class="edit-link">[edit_node]</div>
+    </div>
+    <div>[field_s_slide_link][field_s_image_image][field_s_slide_link_1]</div>';
   $handler->display->display_options['fields']['nothing']['element_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_type'] = '0';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
