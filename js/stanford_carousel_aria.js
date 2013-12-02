@@ -110,7 +110,7 @@
         $active.addClass(direction)
         $next.addClass(direction)
         this.$element.one($.support.transition.end, function () {
-          $next.focus()
+          if (that.options.ariaFocus) $next.focus()
           $next.removeClass([type, direction].join(' ')).addClass('active')
           $active.removeClass(['active', direction].join(' '))
           that.sliding = false
@@ -121,7 +121,7 @@
         if (e.isDefaultPrevented()) return
         $active.removeClass('active')
         $next.addClass('active')
-        $next.focus()
+        if (that.options.ariaFocus) $next.focus()
         this.sliding = false
         this.$element.trigger('slid')
       }
