@@ -39,7 +39,7 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<div class="offscreen">Carousel Start</div>';
+  $handler->display->display_options['header']['area']['content'] = '<div class="offscreen" role="heading" aria-level="2">Carousel Start</div>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
@@ -47,8 +47,8 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
   $handler->display->display_options['footer']['area']['content'] = '<div class="carousel-controls">
-    <button accesskey="p" type="button" class="carousel-control left" href="#myCarousel" data-slide="prev" role="button" aria-label="Previous"><span aria-hidden="true">&lsaquo;</span><span class="offscreen">Previous Slide</span></button>
-    <button accesskey="n" type="button" class="carousel-control right" href="#myCarousel" data-slide="next" role="button" aria-label="Next"><span aria-hidden="true">&rsaquo;</span><span class="offscreen">Next Slide</span></button>
+    <button accesskey="p" type="button" class="carousel-control left" href="#myCarousel" data-slide="prev"><span aria-hidden="true">&lsaquo;</span><span class="offscreen">Previous Slide</span></button>
+    <button accesskey="n" type="button" class="carousel-control right" href="#myCarousel" data-slide="next"><span aria-hidden="true">&rsaquo;</span><span class="offscreen">Next Slide</span></button>
     </div>
     <div class="carousel-dots">
     </div>
