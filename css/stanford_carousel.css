@@ -1,5 +1,8 @@
 /* Styles for the Stanford Carousel Feature */
 
+/* GENERAL STYLES ************************ */
+.offscreen {margin-left: -99999px}
+
 /* CAROUSEL STYLES *********************** */
 #block-views-stanford-carousel-span-9-block, #block-views-stanford-carousel-span-12-block {margin-bottom:0px;}
 
