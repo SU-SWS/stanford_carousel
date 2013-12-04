@@ -35,17 +35,24 @@ function stanford_carousel_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'item';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<div class="offscreen">Carousel Start</div>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
   $handler->display->display_options['footer']['area']['content'] = '<div class="carousel-controls">
-    <button type="button" class="carousel-control left" href="#myCarousel" data-slide="prev" tabindex="0" role="button" aria-label="Previous">&lsaquo;</button>
-    <button type="button" class="carousel-control right" href="#myCarousel" data-slide="next" tabindex="0" role="button" aria-label="Next">&rsaquo;</button>
+    <button accesskey="p" type="button" class="carousel-control left" href="#myCarousel" data-slide="prev" role="button" aria-label="Previous"><span aria-hidden="true">&lsaquo;</span><span class="offscreen">Previous Slide</span></button>
+    <button accesskey="n" type="button" class="carousel-control right" href="#myCarousel" data-slide="next" role="button" aria-label="Next"><span aria-hidden="true">&rsaquo;</span><span class="offscreen">Next Slide</span></button>
     </div>
     <div class="carousel-dots">
-    </div>';
+    </div>
+  <div class="offscreen">Carousel End</div>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Relationship: Field: Image (field_s_image_info) */
   $handler->display->display_options['relationships']['field_s_image_info_value']['id'] = 'field_s_image_info_value';
