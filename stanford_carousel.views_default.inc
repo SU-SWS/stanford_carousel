@@ -54,7 +54,7 @@ function stanford_carousel_views_default_views() {
     </div>
   <div class="offscreen">Carousel End</div>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
-  /* Relationship: Field: Image (field_s_image_info) */
+  /* Relationship: Content: Image (field_s_image_info) */
   $handler->display->display_options['relationships']['field_s_image_info_value']['id'] = 'field_s_image_info_value';
   $handler->display->display_options['relationships']['field_s_image_info_value']['table'] = 'field_data_field_s_image_info';
   $handler->display->display_options['relationships']['field_s_image_info_value']['field'] = 'field_s_image_info_value';
