@@ -16,6 +16,22 @@
 /* CAROUSEL STYLES *********************** */
 #block-views-stanford-carousel-span-9-block, #block-views-stanford-carousel-span-12-block {margin-bottom:0px;}
 
+/* Hide the arrows and replace them with background images */
+.carousel-control {
+   background-image: url('../images/btn-arrow-right.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   font-size: 0;
+   color: transparent;
+}
+.carousel-control:hover, .carousel-control:focus {
+   font-size: 0;
+   color: transparent;
+}
+.carousel-control.left {
+   background-image: url('../images/btn-arrow-left.png');
+}
+
 /* Carousel caption defaults */
 .view.carousel .carousel-caption .slide-caption {letter-spacing: 0.02em; line-height: 1.4em;}
 .view.carousel .carousel-caption .slide-caption a:hover {text-decoration: none;}
