@@ -83,6 +83,23 @@
 @media (max-width: 979px) {
 .view.carousel .carousel-caption h2, #content-body .view.carousel .carousel-caption h2 {font-size: 20px; margin-top: 10px;}
 }
+@media (min-width: 768px) and (max-width: 979px) { 
+.view.carousel .carousel-caption.carousel-position-left, .view.carousel .carousel-caption.carousel-position-right {width: 100%; max-width: 100%; padding: 15px 65px;}
+.view.carousel .carousel-block .carousel-caption {position: relative; width:100%; max-width: 100%; padding: 20px 70px; margin-top: -2px;}
+.view.carousel .carousel-control {top:auto; bottom:30%; width:30px; height: 30px; font-size:40px; line-height:20px;}
+.view.carousel .carousel-block .carousel-caption.carousel-light { background: #F5F5F5; } /* color for OFW slide bkg */
+.view.carousel .carousel-block .carousel-caption.carousel-position-left,  .view.carousel .carousel-block .carousel-caption.carousel-position-right { padding: 20px 70px; }
+.view.carousel .carousel-control { bottom: auto; top: 30%; }
+#main-content .carousel img { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border: 15px solid #F5F5F5; } /* color for OFW slide bkg */
+.view.carousel .carousel-caption.carousel-dark,
+.view.carousel .carousel-caption.carousel-dark h2 a, .view.carousel .carousel-caption.carousel-dark .slide-caption a,
+.view.carousel .carousel-caption.carousel-dark a.more-link:hover, .view.carousel .carousel-caption.carousel-dark .more-link a:hover, 
+.view.carousel .carousel-caption.carousel-dark a.more-link:focus, .view.carousel .carousel-caption.carousel-dark .more-link a:focus {color: #000000;}
+.view.carousel .carousel-caption.carousel-dark { background: #F5F5F5; } /* color for OFW slide bkg */
+.view.carousel .carousel-caption.carousel-dark a.more-link, .view.carousel .carousel-caption.carousel-dark .more-link a { color: #006395;} /* color for OFW more-link (normal) */
+.view.carousel .carousel-caption.carousel-dark a.more-link:hover, .view.carousel .carousel-caption.carousel-dark .more-link a:hover, 
+.view.carousel .carousel-caption.carousel-dark a.more-link:focus, .view.carousel .carousel-caption.carousel-dark .more-link a:focus { color: #000000;} /* color for OFW more-link hover */
+}
 @media (max-width: 767px) {
 .view.carousel .carousel-block .carousel-caption {width: 50%; padding-right: 58px;}
 }
