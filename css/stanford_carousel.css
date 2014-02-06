@@ -36,7 +36,7 @@
 .view.carousel .carousel-caption .slide-caption {letter-spacing: 0.02em; line-height: 1.4em;}
 .view.carousel .carousel-caption .slide-caption a:hover {text-decoration: none;}
 .view.carousel .carousel-caption h2 {margin-top:0px;}
-.view.carousel .carousel-caption h2 a:hover {text-decoration: underline;}
+.view.carousel .carousel-caption h2 a:hover {text-decoration: none;}
 .view.carousel .carousel-caption {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 /* Carousel caption position */
