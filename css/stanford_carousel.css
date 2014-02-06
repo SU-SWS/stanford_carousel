@@ -17,18 +17,18 @@
 #block-views-stanford-carousel-span-9-block, #block-views-stanford-carousel-span-12-block {margin-bottom:0px;}
 
 /* Hide the arrows and replace them with background images */
-.carousel-control {
+.carousel-controls .carousel-control {
    background-image: url('../images/btn-arrow-right.png');
    background-repeat: no-repeat;
    background-position: center center;
    font-size: 0;
    color: transparent;
 }
-.carousel-control:hover, .carousel-control:focus {
+.carousel-controls .carousel-control:hover, .carousel-controls .carousel-control:focus {
    font-size: 0;
    color: transparent;
 }
-.carousel-control.left {
+.carousel-controls .carousel-control.left {
    background-image: url('../images/btn-arrow-left.png');
 }
 
