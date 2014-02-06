@@ -101,7 +101,7 @@
 .view.carousel .carousel-caption.carousel-dark a.more-link:focus, .view.carousel .carousel-caption.carousel-dark .more-link a:focus { color: #000000;} /* color for OFW more-link hover */
 }
 @media (max-width: 767px) {
-.view.carousel .carousel-block .carousel-caption {width: 50%; padding-right: 58px;}
+.view.carousel .carousel-block .carousel-caption {width: 50%;}
 }
 @media (max-width: 630px) {
 .view.carousel .carousel-caption.carousel-position-left, .view.carousel .carousel-caption.carousel-position-right {width: 100%; max-width: 100%; padding: 15px 65px;}
