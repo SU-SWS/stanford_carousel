@@ -51,6 +51,9 @@
 .view.carousel .carousel-caption.carousel-dark h2 a, .view.carousel .carousel-caption.carousel-dark .slide-caption a { color: #EEEEEE; }
 .view.carousel .carousel-caption.carousel-light {color: #000000; background:none repeat scroll 0 0 rgba(255, 255, 255, 0.75);}
 .view.carousel .carousel-caption.carousel-light h2 a, .view.carousel .carousel-caption.carousel-light .slide-caption a { color: #000000; }
+.view.carousel .carousel-caption.carousel-dark a.more-link, .view.carousel .carousel-caption.carousel-dark .more-link a { color: #00a1f1;} /* color for OFW more-link */
+.view.carousel .carousel-caption.carousel-dark a.more-link:hover, .view.carousel .carousel-caption.carousel-dark .more-link a:hover, 
+.view.carousel .carousel-caption.carousel-dark a.more-link:focus, .view.carousel .carousel-caption.carousel-dark .more-link a:focus { color: #EEEEEE;} /* color for OFW more-link hover */
 
 /* Carousel block display styles */
 .view.carousel .carousel-block .carousel-caption { bottom: 1px; display: block; position: absolute; top: 0; width: 34%; overflow:hidden; }
