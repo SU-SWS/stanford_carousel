@@ -77,8 +77,10 @@
 #main-content .carousel img { border: medium none; }
 
 /* Carousel media queries */
+@media (max-width: 1999px) {
+.view.carousel .carousel-block .carousel-caption {width: 50%;}
+}
 @media (max-width: 979px) {
-.view.carousel .carousel-block .carousel-caption {width: 40%;}
 .view.carousel .carousel-caption h2, #content-body .view.carousel .carousel-caption h2 {font-size: 20px; margin-top: 10px;}
 }
 @media (max-width: 767px) {
