@@ -77,7 +77,7 @@
 #main-content .carousel img { border: medium none; }
 
 /* Carousel media queries */
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
 .view.carousel .carousel-block .carousel-caption {width: 50%;}
 }
 @media (max-width: 979px) {
