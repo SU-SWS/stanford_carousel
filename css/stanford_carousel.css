@@ -43,8 +43,8 @@
 .view.carousel .carousel-caption.carousel-position-top {top: 10%; bottom:auto;}
 .view.carousel .carousel-caption.carousel-position-bottom {bottom: 10%; }
 .view.carousel .carousel-caption.carousel-position-left, .view.carousel .carousel-caption.carousel-position-right {width: 70%; max-width: 70%; padding: 15px 25px;}
-.view.carousel .carousel-caption.carousel-position-left {left: 0; right: auto;}
-.view.carousel .carousel-caption.carousel-position-right {left: auto; right: 0;}
+.view.carousel .carousel-caption.carousel-position-left {left: 0; right: auto; padding-left: 70px;}
+.view.carousel .carousel-caption.carousel-position-right {left: auto; right: 0; padding-right: 70px;}
 
 /* Carousel caption color */
 .view.carousel .carousel-caption.carousel-dark {color: #EEEEEE;}
