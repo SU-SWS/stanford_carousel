@@ -1,6 +1,14 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
 ------------------------------------
 
+Stanford Carousel 7.x-1.0-beta1 2014-02-11
+------------------------------------------
+By meganem:
+  -CSS improvements for various breakpoints
+By jbickar:
+  -Accessibility and HTML validation enhancements/fixes
+  -Help text
+
 Stanford Carousel 7.x-1.0-alpha4 2013-11-20
 -------------------------------------------
 Changes since 1.0-alpha3:
