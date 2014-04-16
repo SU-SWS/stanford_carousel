@@ -23,7 +23,8 @@
   /**
    * Adds nav dots to the carousel
    * @param  {[type]} elem jquery selector object
-   * @return {[type]}      [description]
+   * @param  {[type]} id css id name eg: myCar-0
+   * @param  {[type]} key the index id key
    */
   function stanford_carousel_add_dots($elem, $id, $key) {
 
