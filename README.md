@@ -1,7 +1,7 @@
 #[Stanford Carousel](https://github.com/SU-SWS/stanford_carousel)
-##### Version: 7.x-2.0-alpha1
+##### Version: 7.x-2.0
 
-Maintainers: [jbickar](https://github.com/jbickar), [meganem](https://github.com/meganem)   
+Maintainers: [jbickar](https://github.com/jbickar), [meganem](https://github.com/meganem)
 [Changelog.txt](CHANGELOG.txt)
 
 This module implements a carousel slideshow based on Twitter Bootstrap. It consists of a view, CSS, and JS.  It depends on a content type, Stanford Slide. Choose a display block for presenting caption styles. Use the slide content type to configure caption position and color. Use the class "carousel-autoplay" on the block class to have your carousel autoplay (not recommended). Only place one carousel per page. Placing multiple carousels on the same page may lead to undesirable results. Special attention to accessibility has been taken in the construction of this feature.

@@ -1,6 +1,11 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
 ------------------------------------
 
+Stanford Carousel 7.x-2.0 2014-11-27
+-------------------------------------------
+- Rename README.MD to README.md
+- Update stanford_carousel.info to add project status url
+
 Stanford Carousel 7.x-2.0-alpha1 2014-03-31
 -------------------------------------------
 Changes since 1.0-alpha4:
