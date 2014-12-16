@@ -12,6 +12,10 @@ Installation
 
 Install this module like any other module. [See Drupal Documentation](https://drupal.org/documentation/install/modules-themes/modules-7)
 
+Requirements
+---
+This module requires either the [Open Framework theme](https://github.com/SU-SWS/open_framework) (tested and supported) or Twitter Bootstrap 2.x (not tested or supported outside of Open Framework, but should work).
+
 Configuration
 ---
 
