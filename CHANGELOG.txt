@@ -1,6 +1,10 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
 ------------------------------------
 
+Stanford Carousel 7.x-2.1 2015-06-26
+-------------------------------------------
+- Cache your views.
+
 Stanford Carousel 7.x-2.0 2014-11-27
 -------------------------------------------
 - Rename README.MD to README.md
