@@ -36,7 +36,7 @@
     // Therefore, it's a carousel without captions.
     $elem.find('.views-row').each(function(i, v) {
       // Call it "Slide 1", "Slide 2" ,etc.
-      var header = "Slide " + i;
+      var header = "Slide " + (i + 1);
 
       if ($(v).find("h2").length > 0) {
         header = $(v).find("h2").text();
