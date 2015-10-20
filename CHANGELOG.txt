@@ -1,6 +1,11 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
 ------------------------------------
 
+Stanford Carousel 7.x-2.2 2015-10-19
+-------------------------------------------
+- Javascript updates to allow for mulitple carousels on the page
+- Fix to slide count
+
 Stanford Carousel 7.x-2.1 2015-06-26
 -------------------------------------------
 - Cache your views.
