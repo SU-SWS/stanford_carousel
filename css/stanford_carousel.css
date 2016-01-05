@@ -55,6 +55,9 @@
 .view.carousel .carousel-caption.carousel-dark a.more-link:hover, .view.carousel .carousel-caption.carousel-dark .more-link a:hover, 
 .view.carousel .carousel-caption.carousel-dark a.more-link:focus, .view.carousel .carousel-caption.carousel-dark .more-link a:focus { color: #EEEEEE;} /* color for OFW more-link hover */
 
+/* Carousel slide title color */
+.carousel-dark .slide-title {color: #EEEEEE;}
+
 /* Carousel block display styles */
 .view.carousel .carousel-block .carousel-caption { bottom: 1px; display: block; position: absolute; top: 0; width: 34%; overflow:hidden; }
 .view.carousel .carousel-block .carousel-caption.carousel-position-left {left: 0; right: auto; padding: 20px 25px 25px 75px;}
