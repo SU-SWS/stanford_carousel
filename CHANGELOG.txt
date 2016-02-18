@@ -1,6 +1,10 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
 ------------------------------------
 
+Stanford Carousel 7.x-2.2+4-dev 2016-02-18
+-------------------------------------------
+- Fixed style bug for dark slide-title
+
 Stanford Carousel 7.x-2.2 2015-10-19
 -------------------------------------------
 - Javascript updates to allow for mulitple carousels on the page
