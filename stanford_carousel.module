@@ -44,3 +44,22 @@ function stanford_carousel_help($path, $arg) {
       return $output;
   }
 }
+
+/**
+ * Hook Theme
+ * @param  [type] $existing [description]
+ * @param  [type] $type     [description]
+ * @param  [type] $theme    [description]
+ * @param  [type] $path     [description]
+ * @return [type]           [description]
+ */
+function stanford_carousel_theme($existing, $type, $theme, $path) {
+  return array (
+    'views_view_unformatted__stanford_carousel' => array (
+      'variables' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+      'base hook' => 'views_view_unformatted',
+      'template' => 'views-view-unformatted--stanford-carousel',
+      'path' => drupal_get_path('module', 'stanford_carousel') . "/templates",
+    ),
+  );
+}
