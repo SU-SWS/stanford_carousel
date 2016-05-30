@@ -1,6 +1,10 @@
 Stanford Carousel x.x-x.x xxxx-xx-xx
 ------------------------------------
 
+Stanford Carousel 7.x-2.3       2016-05-30
+-------------------------------------------
+- Custom template for theme added.
+
 Stanford Carousel 7.x-2.2+4-dev 2016-02-18
 -------------------------------------------
 - Fixed style bug for dark slide-title
