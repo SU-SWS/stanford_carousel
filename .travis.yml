@@ -17,6 +17,9 @@ cache:
     - $HOME/.cache
     - $HOME/.composer/cache
     - $HOME/.drush/cache
+    - $HOME/stanford_travisci_scripts
+    - $HOME/Stanford-Drupal-Profile
+    - $HOME/stanford-jumpstart-deployer
 
 mysql:
   database: drupal
