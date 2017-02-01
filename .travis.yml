@@ -28,7 +28,7 @@ mysql:
 
 before_install:
   # download external repository with Stanford Travis CI scripts
-  - git clone https://github.com/SU-SWS/stanford_travisci_scripts.git $HOME/stanford_travisci_scripts
+  - if [ ! -d $HOME/stanford_travisci_scripts ]; then git clone https://github.com/SU-SWS/stanford_travisci_scripts.git $HOME/stanford_travisci_scripts; fi
   - chmod +x $HOME/stanford_travisci_scripts/bin/*.sh
   # install composer packages
   - $HOME/stanford_travisci_scripts/bin/before_install.sh
