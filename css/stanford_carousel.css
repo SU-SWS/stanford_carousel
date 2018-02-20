@@ -101,22 +101,22 @@
 /* Carousel caption color */
 
 .view.carousel .carousel-caption.carousel-dark {
-  color: #EEEEEE;
+  color: #eee;
 }
 
 .view.carousel .carousel-caption.carousel-dark h2 a,
 .view.carousel .carousel-caption.carousel-dark .slide-caption a {
-  color: #EEEEEE;
+  color: #eee;
 }
 
 .view.carousel .carousel-caption.carousel-light {
-  color: #000000;
+  color: #000;
   background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
 }
 
 .view.carousel .carousel-caption.carousel-light h2 a,
 .view.carousel .carousel-caption.carousel-light .slide-caption a {
-  color: #000000;
+  color: #000;
 }
 
 .view.carousel .carousel-caption.carousel-dark a.more-link,
@@ -130,7 +130,7 @@
 .view.carousel .carousel-caption.carousel-dark .more-link a:hover,
 .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
 .view.carousel .carousel-caption.carousel-dark .more-link a:focus {
-  color: #EEEEEE;
+  color: #eee;
 }
 
 /* color for OFW more-link hover */
@@ -138,7 +138,7 @@
 /* Carousel slide title color */
 
 .carousel-dark .slide-title {
-  color: #EEEEEE;
+  color: #eee;
 }
 
 /* Carousel block display styles */
@@ -176,8 +176,8 @@
 }
 
 .view.carousel .carousel-indicators li {
-  background-color: #FFFFFF;
-  border: 1px solid #666666;
+  background-color: #fff;
+  border: 1px solid #666;
   border-radius: 7px;
   display: inline-block;
   float: none;
@@ -186,12 +186,12 @@
 }
 
 .view.carousel .carousel-indicators .active {
-  background-color: #666666;
+  background-color: #666;
 }
 
 .view.carousel .carousel-indicators li:hover {
   cursor: pointer;
-  background-color: #666666;
+  background-color: #666;
 }
 
 .view.carousel .carousel-indicators li a {
@@ -214,7 +214,7 @@
 }
 
 .view.carousel .carousel-control:focus {
-  outline: 1px dotted #444444;
+  outline: 1px dotted #444;
 }
 
 /* Carousel Image */
@@ -247,6 +247,7 @@
     padding: 15px 65px;
     position: inherit;
   }
+
   .view.carousel .carousel-block .carousel-caption {
     position: relative;
     width: 100%;
@@ -254,6 +255,7 @@
     padding: 20px 70px;
     margin-top: -2px;
   }
+
   .view.carousel .carousel-control {
     top: auto;
     bottom: 30%;
@@ -262,25 +264,30 @@
     font-size: 40px;
     line-height: 20px;
   }
+
   .view.carousel .carousel-block .carousel-caption.carousel-light,
   .view.carousel .carousel-caption.carousel-light {
-    background: #F5F5F5;
+    background: #f5f5f5;
   }
+
   /* color for OFW slide bkg */
   .view.carousel .carousel-block .carousel-caption.carousel-position-left,
   .view.carousel .carousel-block .carousel-caption.carousel-position-right {
     padding: 20px 70px;
   }
+
   .view.carousel .carousel-control {
     bottom: auto;
     top: 30%;
   }
+
   #main-content .carousel img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 15px solid #F5F5F5;
+    border: 15px solid #f5f5f5;
   }
+
   /* color for OFW slide bkg */
   .view.carousel .carousel-caption.carousel-dark,
   .view.carousel .carousel-caption.carousel-dark h2 a,
@@ -289,23 +296,27 @@
   .view.carousel .carousel-caption.carousel-dark .more-link a:hover,
   .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
   .view.carousel .carousel-caption.carousel-dark .more-link a:focus {
-    color: #000000;
+    color: #000;
   }
+
   .view.carousel .carousel-caption.carousel-dark {
-    background: #F5F5F5;
+    background: #f5f5f5;
   }
+
   /* color for OFW slide bkg */
   .view.carousel .carousel-caption.carousel-dark a.more-link,
   .view.carousel .carousel-caption.carousel-dark .more-link a {
     color: #006395;
   }
+
   /* color for OFW more-link (normal) */
   .view.carousel .carousel-caption.carousel-dark a.more-link:hover,
   .view.carousel .carousel-caption.carousel-dark .more-link a:hover,
   .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
   .view.carousel .carousel-caption.carousel-dark .more-link a:focus {
-    color: #000000;
+    color: #000;
   }
+
   /* color for OFW more-link hover */
 }
 
@@ -323,6 +334,7 @@
     padding: 15px 65px;
     position: inherit;
   }
+
   .view.carousel .carousel-block .carousel-caption {
     position: relative;
     width: 100%;
@@ -330,6 +342,7 @@
     padding: 20px 70px;
     margin-top: -2px;
   }
+
   .view.carousel .carousel-control {
     top: auto;
     bottom: 30%;
@@ -338,25 +351,30 @@
     font-size: 40px;
     line-height: 20px;
   }
+
   .view.carousel .carousel-block .carousel-caption.carousel-light,
   .view.carousel .carousel-caption.carousel-light {
-    background: #F5F5F5;
+    background: #f5f5f5;
   }
+
   /* color for OFW slide bkg */
   .view.carousel .carousel-block .carousel-caption.carousel-position-left,
   .view.carousel .carousel-block .carousel-caption.carousel-position-right {
     padding: 20px 70px;
   }
+
   .view.carousel .carousel-control {
     bottom: auto;
     top: 30%;
   }
+
   #main-content .carousel img {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 15px solid #F5F5F5;
+    border: 15px solid #f5f5f5;
   }
+
   /* color for OFW slide bkg */
   .view.carousel .carousel-caption.carousel-dark,
   .view.carousel .carousel-caption.carousel-dark h2 a,
@@ -365,23 +383,27 @@
   .view.carousel .carousel-caption.carousel-dark .more-link a:hover,
   .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
   .view.carousel .carousel-caption.carousel-dark .more-link a:focus {
-    color: #000000;
+    color: #000;
   }
+
   .view.carousel .carousel-caption.carousel-dark {
-    background: #F5F5F5;
+    background: #f5f5f5;
   }
+
   /* color for OFW slide bkg */
   .view.carousel .carousel-caption.carousel-dark a.more-link,
   .view.carousel .carousel-caption.carousel-dark .more-link a {
     color: #006395;
   }
+
   /* color for OFW more-link (normal) */
   .view.carousel .carousel-caption.carousel-dark a.more-link:hover,
   .view.carousel .carousel-caption.carousel-dark .more-link a:hover,
   .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
   .view.carousel .carousel-caption.carousel-dark .more-link a:focus {
-    color: #000000;
+    color: #000;
   }
+
   /* color for OFW more-link hover */
 }
 
@@ -405,13 +427,13 @@
 
 @media (max-width: 979px) and (min-width: 768px) {
   .view.carousel.no-overlay .carousel-caption.carousel-dark {
-    background: #000000;
+    background: #000;
   }
 }
 
 @media (max-width: 630px) {
   .view.carousel.no-overlay .carousel-caption.carousel-dark {
-    background: #000000;
+    background: #000;
   }
 }
 
@@ -423,7 +445,7 @@
   .view.carousel.no-overlay .carousel-caption.carousel-dark a.more-link:focus,
   .view.carousel.no-overlay .carousel-caption.carousel-dark a.more-link:hover,
   .view.carousel.no-overlay .carousel-caption.carousel-dark h2 a {
-    color: #ffffff;
+    color: #fff;
   }
 }
 
@@ -435,6 +457,6 @@
   .view.carousel.no-overlay .carousel-caption.carousel-dark a.more-link:focus,
   .view.carousel.no-overlay .carousel-caption.carousel-dark a.more-link:hover,
   .view.carousel.no-overlay .carousel-caption.carousel-dark h2 a {
-    color: #ffffff;
+    color: #fff;
   }
 }
